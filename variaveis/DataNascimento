@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+
+class AnoNascimento{
+
+	public static void main(String args[]){
+
+		float capital = Float.parseFloat(JOptionPane.showInputDialog("Digite o valor do capital: "));
+		double taxaJuros = Float.parseFloat(JOptionPane.showInputDialog("Digite a o valor da taxa de juros:"));
+		double meses = Float.parseFloat(JOptionPane.showInputDialog("Digite a quantidade de meses que o capital ficara aplicado:"));
+		double montante = capital * Math.pow((1 +taxaJuros / 100), meses);
+		
+		System.out.println("O montante eh: " + montante);
+
+	}
+}
